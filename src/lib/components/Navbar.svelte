@@ -1,39 +1,78 @@
 <script>
-    import Button from "./ui/button/button.svelte";
-    import { page } from "$app/stores";
+	import Button from "./ui/button/button.svelte";
+	import { page } from "$app/stores";
+	import * as Sheet from "$lib/components/ui/sheet";
+
+	const links = [
+		{
+			text: "About me",
+			href: "/",
+		},
+		{
+			text: "Resume",
+			href: "/resume",
+		},
+		{
+			text: "Projects",
+			href: "/projects",
+		},
+		{
+			text: "Contact",
+			href: "/contact",
+		},
+	];
+
+	let isSheetOpen = false;
 </script>
 
 <div class="w-[100dvw] bg-secondary text-secondary-foreground py-8 px-6">
-    <nav class="max-w-screen-2xl flex justify-between items-baseline mx-auto">
-        <div class="flex items-center gap-2">
-            <div class="bg-primary w-5 h-5 me-4" />
-            <div class="flex items-end gap-1">
-                <span class="font-bold text-3xl"> El Cato </span>
-                <span class="text-xl uppercase"> / Web Developer </span>
-            </div>
-        </div>
+	<nav class="max-w-screen-2xl flex justify-between items-center mx-auto">
+		<div class="flex items-center gap-2">
+			<div class="bg-primary w-5 h-5 me-4" />
+			<div class="flex items-end gap-1">
+				<span class="font-bold text-3xl"> El Cato </span>
+				<span class="text-xl uppercase"> / Web Developer </span>
+			</div>
+		</div>
 
-        <div class="uppercase">
-            <Button
-                class=" {$page.url.pathname == '/' && 'text-primary'}"
-                href="/"
-                variant="link">About me</Button
-            >
-            <Button
-                class=" {$page.url.pathname == '/resume' && 'text-primary'}"
-                href="/resume"
-                variant="link">Resume</Button
-            >
-            <Button
-                class=" {$page.url.pathname == '/projects' && 'text-primary'}"
-                href="/projects"
-                variant="link">Projects</Button
-            >
-            <Button
-                class=" {$page.url.pathname == '/contact' && 'text-primary'}"
-                href="/contact"
-                variant="link">Contact</Button
-            >
-        </div>
-    </nav>
+		<div>
+			<div class="uppercase hidden md:flex">
+				{#each links as link}
+					<Button
+						class=" {$page.url.pathname == link.href && 'text-primary'}"
+						href={link.href}
+						variant="link">{link.text}</Button
+					>
+				{/each}
+			</div>
+			<Sheet.Root bind:open={isSheetOpen}>
+				<Sheet.Trigger class="flex md:hidden">
+					<Button variant="ghost" size="icon">
+						<svg
+							class="w-12 h-auto"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							><path
+								fill="currentColor"
+								d="M18 18v2H6v-2zm3-7v2H3v-2zm-3-7v2H6V4z"
+							/></svg
+						>
+					</Button>
+				</Sheet.Trigger>
+				<Sheet.Content class="flex flex-col justify-center">
+					{#each links as link}
+						<Button
+							class="text-xl {$page.url.pathname == link.href &&
+								'text-primary'}"
+							href={link.href}
+							variant="link"
+							on:click={() => (isSheetOpen = false)}
+						>
+							{link.text}
+						</Button>
+					{/each}
+				</Sheet.Content>
+			</Sheet.Root>
+		</div>
+	</nav>
 </div>
