@@ -3,9 +3,11 @@
 </script>
 
 <div class="flex justify-end">
-	<div class="bg-secondary min-h-[calc(100vh-6.5rem)] w-[60vw] relative">
+	<div
+		class="bg-secondary relative w-full lg:w-[60vw] h-[40vh] lg:min-h-[calc(100vh-6.5rem)] flex justify-center"
+	>
 		<div
-			class="bg-[#f4ece6] shadow-[0_10px_60px_-15px_rgba(0,0,0,0.7)] w-[22rem] absolute start-10 -translate-x-full translate-y-1/4 flex flex-col items-center justify-between pt-8 gap-2"
+			class="bg-[#f4ece6] dark:bg-[#303030] shadow-[0_10px_60px_-15px_rgba(0,0,0,0.7)] w-[22rem] absolute lg:start-10 lg:-translate-x-full translate-y-1/4 flex flex-col items-center justify-between pt-8 gap-2"
 		>
 			<img
 				src="https://elcato.sb.sa/favicon.png"
@@ -19,7 +21,9 @@
 				<h2 class="text-2xl">Web Developer</h2>
 			</div>
 
-			<div class="bg-secondary w-full flex justify-center p-2 mt-12">
+			<div
+				class="bg-secondary text-secondary-foreground w-full flex justify-center p-2 mt-12"
+			>
 				<Button variant="ghost" size="icon">
 					<svg
 						class="h-auto w-6"
@@ -64,6 +68,28 @@
 						/></svg
 					>
 				</Button>
+			</div>
+		</div>
+		<div>
+			<h1 class="text-8xl">Hello</h1>
+			<h4 class="text-4xl">Here's who I am & what I do</h4>
+			<div class="flex">
+				<Button>Resume</Button>
+				<Button>Projects</Button>
+			</div>
+			<div>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+					laboriosam fugiat hic enim eveniet dolore corrupti iusto quasi quidem
+					maiores nostrum beatae optio est, sequi magnam laudantium autem
+					officiis. Et.
+				</p>
+				<p>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
+					recusandae, vitae, nemo enim ratione corrupti ex laboriosam mollitia,
+					impedit id eaque. Amet eos illum neque eligendi quisquam, similique
+					hic tenetur!
+				</p>
 			</div>
 		</div>
 	</div>
