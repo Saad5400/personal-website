@@ -4,10 +4,10 @@
 
 <div class="flex justify-end">
 	<div
-		class="bg-secondary relative w-full lg:w-[60vw] h-[40vh] lg:min-h-[calc(100vh-6.5rem)] flex justify-center"
+		class="bg-secondary text-secondary-foreground relative w-full lg:w-[60vw] min-h-[40vh] lg:min-h-[calc(100vh-6.5rem)] flex justify-center items-center pb-32"
 	>
 		<div
-			class="bg-[#f4ece6] dark:bg-[#303030] shadow-[0_10px_60px_-15px_rgba(0,0,0,0.7)] w-[22rem] absolute lg:start-10 lg:-translate-x-full translate-y-1/4 flex flex-col items-center justify-between pt-8 gap-2"
+			class="bg-[#f4ece6] dark:bg-[#303030] shadow-[0_10px_60px_-15px_rgba(0,0,0,0.7)] w-[22rem] absolute lg:start-10 lg:-translate-x-full flex flex-col items-center justify-between pt-8 gap-2 self-bottom lg:self-start translate-y-[105%] lg:translate-y-1/4 max-w-[85vw]"
 		>
 			<img
 				src="https://elcato.sb.sa/favicon.png"
@@ -70,14 +70,14 @@
 				</Button>
 			</div>
 		</div>
-		<div>
-			<h1 class="text-8xl">Hello</h1>
+		<div class="mx-10 max-w-[30rem] flex flex-col gap-8">
+			<h1 class="text-8xl font-extrabold">Hello</h1>
 			<h4 class="text-4xl">Here's who I am & what I do</h4>
-			<div class="flex">
-				<Button>Resume</Button>
-				<Button>Projects</Button>
+			<div class="flex gap-2">
+				<Button href="/resume" class="w-32">Resume</Button>
+				<Button href="/projects" variant="outline" class="w-32">Projects</Button>
 			</div>
-			<div>
+			<div class="flex flex-col gap-2">
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
 					laboriosam fugiat hic enim eveniet dolore corrupti iusto quasi quidem

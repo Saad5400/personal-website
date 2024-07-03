@@ -32,7 +32,7 @@
 			<div class="bg-primary w-5 h-5 me-4" />
 			<div class="flex items-end gap-1">
 				<span class="font-bold text-3xl"> El Cato </span>
-				<span class="text-xl uppercase"> / Web Developer </span>
+				<span class="text-xl uppercase hidden sm:flex"> / Web Developer </span>
 			</div>
 		</div>
 
