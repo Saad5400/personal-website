@@ -10,6 +10,8 @@
 <Container class="flex flex-col gap-16">
     <Title title="Let's Talk" />
     <form
+        action="https://formsubmit.co/elcato5400@gmail.com"
+        method="POST"
         class="bg-secondary text-secondary-foreground p-8 flex flex-col gap-8"
     >
         <div>
