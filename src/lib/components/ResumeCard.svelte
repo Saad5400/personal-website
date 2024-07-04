@@ -4,7 +4,7 @@
 	export let company: string;
 </script>
 
-<div class="bg-secondary p-8 shadow-xl flex items-center gap-16">
+<div class="bg-secondary p-8 shadow-xl flex flex-col sm:flex-row items-center gap-16">
 	<div class="flex flex-col min-w-32">
 		<span class="text-primary font-bold">{date}</span>
 		<span class="font-bold">{title}</span>

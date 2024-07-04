@@ -1,13 +1,12 @@
 <script lang="ts">
 	import Button from "$lib/components/ui/button/button.svelte";
 	import ResumeCard from "$lib/components/ResumeCard.svelte";
+	import Title from "$lib/components/Title.svelte";
+	import Container from "$lib/components/Container.svelte";
 </script>
 
-<div class="max-w-screen-sm px-4 mx-auto py-16">
-	<h1 class="mx-auto w-fit text-4xl font-bold flex items-center">
-		<div class="bg-primary w-5 h-5 me-4" />
-		<span>Resume</span>
-	</h1>
+<Container>
+	<Title title="Resume" />
 	<div class="pt-16 flex flex-col gap-8">
 		<div class="flex justify-between items-center">
 			<span class="text-2xl font-bold">Education</span>
@@ -19,15 +18,16 @@
 			company="Umm Al-Qura University"
 		>
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ipsa hic
-				fugiat quos voluptas voluptatibus ut porro qui iusto a esse corrupti,
-				accusantium iure impedit ratione maxime deserunt itaque sit?
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+				ipsa hic fugiat quos voluptas voluptatibus ut porro qui iusto a
+				esse corrupti, accusantium iure impedit ratione maxime deserunt
+				itaque sit?
 			</p>
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vitae
-				eveniet eaque libero animi veritatis perspiciatis aspernatur corporis a
-				veniam mollitia sint, non cum nesciunt quas quam ullam! Impedit,
-				accusamus?
+				Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				Adipisci vitae eveniet eaque libero animi veritatis perspiciatis
+				aspernatur corporis a veniam mollitia sint, non cum nesciunt
+				quas quam ullam! Impedit, accusamus?
 			</p>
 		</ResumeCard>
 		<ResumeCard
@@ -36,7 +36,6 @@
 			company="Umm Al-Qura University"
 		>
 			<p>Hello World</p>
-			<img />
 		</ResumeCard>
 	</div>
-</div>
+</Container>
