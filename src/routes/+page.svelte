@@ -3,6 +3,12 @@
 import Button from "$lib/components/ui/button/button.svelte";
 </script>
 
+<svelte:head>
+	<title>
+		El Cato - Web Developer
+	</title>
+</svelte:head>
+
 <div class="flex justify-end pb-[35rem] lg:pb-0">
 	<div
 		class="bg-secondary text-secondary-foreground relative w-full lg:w-[60vw] min-h-[40vh] lg:min-h-[calc(100vh-10.5rem)] flex justify-center items-center pb-32"

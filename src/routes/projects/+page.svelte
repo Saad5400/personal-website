@@ -4,6 +4,12 @@
     import Title from "$lib/components/Title.svelte";
 </script>
 
+<svelte:head>
+	<title>
+		El Cato - Projects
+	</title>
+</svelte:head>
+
 <Container class="flex flex-col gap-16">
     <Title title="Projects" />
     <p>

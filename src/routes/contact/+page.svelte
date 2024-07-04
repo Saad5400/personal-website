@@ -7,6 +7,10 @@
     import Textarea from "$lib/components/ui/textarea/textarea.svelte";
 </script>
 
+<svelte:head>
+    <title>El Cato - Let's Talk</title>
+</svelte:head>
+
 <Container class="flex flex-col gap-16">
     <Title title="Let's Talk" />
     <form
