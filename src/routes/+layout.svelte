@@ -1,5 +1,6 @@
 <script>
     import "../app.css";
+    import "svelte-reveal/styles.css";
     import { ModeWatcher } from "mode-watcher";
     import Navbar from "$lib/components/Navbar.svelte";
     import Footer from "$lib/components/Footer.svelte";
