@@ -21,7 +21,11 @@
     <ProjectCard
         title="El Cato"
         subtitle="Programming courses and quizzes"
-        imageSrc="/project1.png"
+        imageSrc={[
+          "/calculator/project1.png",
+          "/calculator/1.png",
+          "/calculator/2.png",
+        ]}
     >
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sequi totam mollitia officiis maxime similique neque aspernatur minus perferendis a quam repellendus magni, id perspiciatis consequuntur. Libero adipisci distinctio debitis!
