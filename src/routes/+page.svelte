@@ -45,7 +45,7 @@
 			</div>
 		</div>
 		<div class="mx-10 max-w-[30rem] flex flex-col gap-8">
-			<h1 class="text-8xl font-extrabold">Hello</h1>
+			<h1 id="page-title" class="text-8xl font-extrabold">Hello</h1>
 			<h4 class="text-4xl">Here's who I am & what I do</h4>
 			<div class="flex gap-2">
 				<Button href="/resume" class="w-32">Resume</Button>

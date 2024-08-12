@@ -31,7 +31,7 @@
 	<nav class="max-w-screen-2xl flex justify-between items-center mx-auto">
 		<a href="/" class="flex items-center gap-2">
 			<div class="flex items-end gap-1">
-				<Title title="El Cato" class="text-3xl" />
+				<Title id="my-name" title="El Cato" class="text-3xl" />
 				<span class="text-xl uppercase hidden sm:flex"> / Web Developer </span>
 			</div>
 		</a>
